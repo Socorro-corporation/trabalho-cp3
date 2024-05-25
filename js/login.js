@@ -44,17 +44,9 @@ let listaUsuario = [
             setTimeout(function(){
                 msgStatus.setAttribute("class","valida");
                 msgStatus.innerText = "";
-                window.location.href = "../sucesso.html";
+                window.location.href = "../index.html";
             }, 3000);
             return false;
         }
     }
-        msgStatus.setAttribute("class","erro");
-        msgStatus.innerText = "Login ou senha invalidos!";
-        setTimeout(function(){
-            msgStatus.setAttribute("class","valida");
-            msgStatus.innerText = "";
-            window.location.href = "../erro.html";
-        }, 3000);
-        return false;
     }

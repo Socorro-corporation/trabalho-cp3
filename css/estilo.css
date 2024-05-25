@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../imgs/Vídeo-do-WhatsApp-de-2024-05-25-à_s_-16.57.06_f2fe55ac.gif");
+
+    background-size: 70%;
+    background-position-y: -300px;
+    background-position-x: -400px;
+    box-shadow: inset 0 0 0 1000px #ff4a9060;
+    height: 100vh;
+    font-family: "Inter";
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-header{
+    margin-top: 15vh;
+    color: white;
+    height: 100%;
+    width: 30%;
+}
+.header{
+    text-align: center;
+}
+fieldset{
+    border: none;
+    background-color: #35101e;
+    border-radius: 20px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 15px;
+    margin-bottom: 12vh;
+}
+.btnEnviar{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 30px;
+}
+
+.fs-18{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
