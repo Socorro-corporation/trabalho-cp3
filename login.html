@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
     <title>Login</title>
+    <script src="./js/login.js" defer></script>
+    
 </head>
 <body>
     <div class="container">
         <header class="header">
             <h1>Sistema de login</h1>
-            <div> 
+        </header>   
+            <div class="form"> 
                 <form 
                 action="./login.html"
-                method="get">
-
+                method="get"
+                onsubmit="return validar(idEmail,idSenha)">
+                <span class="valida"></span>
                 <fieldset>
-                    <legend>Login</legend>
                     <div class="form-group">
-                        <div>
-                            <label for="idEmail">Email</label>
+                        <div class="column">
+                            <label class="fs-18" for="idEmail">Email</label>
                             <input
+                            class="input"
                             type="email"
                             name="txtEmail"
                             id="idEmail"
                             placeholder="Digite o seu Email aqui"
                             oninvalid="this.setCustomValidity('Email inválido.')">
                         </div>
-                        <div>
-                            <label for="idSenha">Senha</label>
+                        <div class="column">
+                            <label class="fs-18" for="idSenha">Senha</label>
                             <input
+                            class="input"
                             type="password"
                             name="txtSenha"
                             id="idSenha"
@@ -36,15 +42,12 @@
                             >
                         </div>
                         <div>
-                            <button type="button">Enviar</button>
+                            <button class="btnEnviar" type="submit">Enviar</button>
                         </div>
                     </div>
                 </fieldset>
-
-
                 </form>
             </div>
-        </header>
-    </div>
+    </div>  
 </body>
 </html>
