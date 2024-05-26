@@ -48,5 +48,13 @@ let listaUsuario = [
             }, 3000);
             return false;
         }
+          
     }
+      msgStatus.setAttribute("class","erro");
+      msgStatus.innerText = "Você inseriu a senha ou o email errado";
+      setTimeout(function(){
+        msgStatus.innerText = "";
+        msgStatus.removeAttribute("class","erro")
+        },3000)
+          return false;
     }
