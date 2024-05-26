@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: 70%;
+    background-position-y: -300px;
+    background-position-x: -400px;
+    box-shadow: inset 0 0 0 1000px white;
+    height: 100vh;
+    font-family: "Inter";
+}
+
+h1{
+    font-style: bold;
+    font-size: 60px;
+    color: #5d42a0;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 3px solid #5d42a0; 
+    padding-bottom: 30px;
+ }
+
+ .conteudo{
+    content: url('../imgs/image.png');
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat; 
+    display: flex;
+ }
