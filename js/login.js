@@ -45,7 +45,7 @@ let listaUsuario = [
                 msgStatus.setAttribute("class","valida");
                 msgStatus.innerText = "";
                 window.location.href = "../index.html";
-            }, 3000);
+            }, 5000);
             return false;
         }
           
@@ -55,6 +55,6 @@ let listaUsuario = [
       setTimeout(function(){
         msgStatus.innerText = "";
         msgStatus.removeAttribute("class","erro")
-        },3000)
+        },5000)
           return false;
     }
